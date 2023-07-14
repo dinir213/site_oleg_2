@@ -1335,6 +1335,7 @@ section.hero {
 .mockup-container {
     position: relative;
     min-height: 70vh;
+    /* background-image: url("../dist/images/photo-1-15821311950951123275625.jpeg"); */
     background-image: url("../images/photo-1-15821311950951123275625.jpeg");
 
     background-size: cover;
