@@ -8,8 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+	<?php 
+	require ('some_file.php');
+	require ('server/language.php');
+	require ('server/create.php');
+	?>
 </head>
 <body class="is-boxed has-animations">
+	
     <div class="body-wrap boxed-container">
         <header class="site-header text-light">
             <div class="container">
@@ -17,7 +23,7 @@
                     <div class="brand header-brand">
                         <h1 class="m-0">
                             <a href="#">
-								<img class="header-logo-image" src="src/images/124-1245916_a-definitive-ranking-of-emoji-that-can-be-used-to-represent-banana.svg" width="50px" alt="Logo">
+								<img class="header-logo-image" width="50px" src="src/images/124-1245916_a-definitive-ranking-of-emoji-that-can-be-used-to-represent-banana.svg" alt="Logo">
                             </a>
                         </h1>
                     </div>
@@ -36,7 +42,9 @@
 						<div class="hero-copy full-screen">
 							<div class="full-screen__body">
 								<h1 class="hero-title mt-0 full-screen__title">NRX Studio</h1>
-								<p class="hero-paragraph full-screen__text">Перейти по ссылке в кнопке.</p>	
+								<p class="hero-paragraph full-screen__text"><?php echo $header_p; ?></p>
+								<p class="time"><?php echo $ip ?></p>	
+								
 								<div class="hero-cta">
 									<a class="button button-primary button-wide-mobile" href="https://www.sheer.com/nrxstudio">Перейти</a>
 								</div>
@@ -56,14 +64,13 @@
 										<source src="src/videos/block.mp4" type="video/mp4">
 									</video>
 									<div class="hero-cta">
-										<a class="button button-primary button-wide-mobile" href="https://www.sheer.com/nrxstudio">Get early access</a>
+										<a class="button button-primary button-wide-mobile" href="https://www.sheer.com/nrxstudio">Перейти</a>
 									</div>
 								</div>
 							</div>
 							
 							
-							 -->
-						</div>
+						</div> -->
                     </div>
                 </div>
             </section>
@@ -74,17 +81,15 @@
 						<div class="container">
 							<div class="feature-extended">
 								<div class="feature-extended-image">
-									<!-- <div class="mockup-bg">
-										<img src="dist/images/iphone-feature-bg-01.svg" alt="iPhone Feature 01 illustration">
-									</div> -->
+									
 									<video preload="metadata" controls loop poster="dist/images/First_preview.png" class="feature-extended__video">
 										<source src="src/videos/ul/FIRST.webm" type="video/webm">
 										<source src="src/videos/ul/FIRST.mp4" type="video/mp4">
 									</video>	
 								</div>
 								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16">Amazing features, coming soon.</h3>
-									<p class="m-0">Quam quisque id diam vel quam elementum pulvinar. Ut etiam sit amet nisl purus in mollis nunc. Odio morbi quis commodo odio aenean sed adipiscing diam donec.</p>
+									<h3 class="mt-0 mb-16"><?php echo $first_video_h3; ?></h3>
+									<p class="m-0"><?php echo $first_video_p; ?></p>
 									<div class="hero-cta">
 										<a class="button button-primary button-wide-mobile feature-extended__button" href="https://www.sheer.com/nrxstudio">Перейти</a>
 									</div>
@@ -93,17 +98,14 @@
 							
 							<div class="feature-extended">
 								<div class="feature-extended-image">
-									<!-- <div class="mockup-bg">
-										<img src="dist/images/iphone-feature-bg-03.svg" alt="iPhone Feature 03 illustration">
-									</div> -->
-									<video preload="metadata" controls loop poster="dist/images/Second_preview.png" class="feature-extended__video">
+									<video preload="metadata" controls loop poster="dist/images/Second_preview_new.png" class="feature-extended__video">
 										<source src="src/videos/ul/SECOND.webm" type="video/webm">
 										<source src="src/videos/ul/SECOND.mp4" type="video/mp4">
 									</video>
 								</div>
 								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16">Amazing features, coming soon.</h3>
-									<p class="m-0">Quam quisque id diam vel quam elementum pulvinar. Ut etiam sit amet nisl purus in mollis nunc. Odio morbi quis commodo odio aenean sed adipiscing diam donec.</p>
+									<h3 class="mt-0 mb-16"><?php echo $second_video_h3; ?></h3>
+									<p class="m-0"><?php echo $second_video_p; ?></p>
 									<div class="hero-cta">
 										<a class="button button-primary button-wide-mobile feature-extended__button" href="https://www.sheer.com/nrxstudio">Перейти</a>
 									</div>
@@ -111,16 +113,14 @@
 							</div>
 							<div class="feature-extended">
 								<div class="feature-extended-image">
-									<!-- <div class="mockup-bg">
-										<img src="dist/images/iphone-feature-bg-04.svg" alt="iPhone Feature 04 illustration">
-									</div> -->
+									
 									<video preload="metadata" controls loop poster="dist/images/Third_preview.png" class="feature-extended__video">
 										<source src="src/videos/ul/THIRD.webm" type="video/webm">
 										<source src="src/videos/ul/THIRD.mp4" type="video/mp4">
 									</video>									</div>
 								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16">Amazing features, coming soon.</h3>
-									<p class="m-0">Quam quisque id diam vel quam elementum pulvinar. Ut etiam sit amet nisl purus in mollis nunc. Odio morbi quis commodo odio aenean sed adipiscing diam donec.</p>
+									<h3 class="mt-0 mb-16"><?php echo $third_video_h3; ?></h3>
+									<p class="m-0"><?php echo $third_video_p; ?></p>
 									<div class="hero-cta">
 										<a class="button button-primary button-wide-mobile feature-extended__button" href="https://www.sheer.com/nrxstudio">Перейти</a>
 									</div>
@@ -131,6 +131,39 @@
                 </div>
             </section>
         </main>
+		
+		<script>
+			
+    		// Функция для отправки времени пребывания на сервер с помощью AJAX
+			function sendTimeSpent(timeSpent) {
+			var xhr = new XMLHttpRequest();
+			xhr.open("POST", "record_time.php", true);
+			xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState === 4 && xhr.status === 200) {
+				console.log(xhr.responseText); // Вывести ответ от сервера в консоль (опционально)
+				}
+			};
+			xhr.send("timeSpent=" + timeSpent);
+			}
+
+			// Записать время входа пользователя при загрузке страницы
+			var entryTime = new Date().getTime();
+
+			// Записать время выхода пользователя при закрытии страницы или навигации на другую страницу
+			// window.addEventListener('beforeunload', function(event) {
+			// var exitTime = new Date().getTime();
+			// var timeSpent = exitTime - entryTime;
+			// sendTimeSpent(timeSpent); // Отправить время пребывания на сервер
+			// event.preventDefault();
+			// event.returnValue = ''; // Некоторые браузеры требуют возврат значения из обработчика
+			// });
+			window.onbeforeunload = function() {
+			var exitTime = new Date().getTime();
+			var timeSpent = exitTime - entryTime;
+			sendTimeSpent(timeSpent); // Отправить время пребывания на сервер
+			};
+ 		</script>
 
 		<footer class="site-footer">
 			<div class="footer-particles-container">
@@ -141,8 +174,8 @@
 					<div class="container-sm">
 						<div class="cta-inner section-inner">
 							<div class="cta-header text-center">
-								<h2 class="section-title mt-0">Первая версия сайта</h2>
-								<p class="section-paragraph">Безумно прекрасные ощущения и чувства после посещения сайта</p>
+								<h2 class="section-title mt-0"><?php echo $footer_h2; ?></h2>
+								<p class="section-paragraph"><?php echo $footer_p; ?></p>
 								<div class="cta-cta">
 									<a class="button button-primary button-wide-mobile" href="https://www.sheer.com/nrxstudio">Перейти</a>
 								</div>
@@ -156,7 +189,7 @@
 					<div class="site-footer-inner">
 						<div class="brand footer-brand">
 							<a href="#">
-								<img src="src/images/124-1245916_a-definitive-ranking-of-emoji-that-can-be-used-to-represent-banana.svg" width="50px" alt="nrx logo">
+								<img src="src/images/124-1245916_a-definitive-ranking-of-emoji-that-can-be-used-to-represent-banana.svg" width="50px" alt="Venus logo">
 							</a>
 						</div>
 						<!-- <ul class="footer-links list-reset">
@@ -200,7 +233,8 @@
 							</li>
 						</ul> -->
 						<div class="footer-copyright">
-							<div>&copy; 2023 NECHIPORENKO, all rights reserved</div>
+							<div>&copy; 2023 NECHIPORENKO, all rights reserved </div>
+							
 						</div>
 					</div>
 				</div>
